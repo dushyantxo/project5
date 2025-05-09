@@ -1,0 +1,29 @@
+version 3
+run General-0-20250509-19:32:54-876
+attr configname General
+attr datetime 20250509-19:32:54
+attr datetimef 20250509-193254
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network evcharging.EVChargingSim
+attr processid 876
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network evcharging.EVChargingSim
+config **.EV.numPackets 10
+config **.EV.packetLength 512B
+
+par EVChargingSim.EV typename "\"evcharging.ElectricVehicle\""
+par EVChargingSim.EV initialSOC 50
+par EVChargingSim.CS typename "\"evcharging.ChargingStation\""
+par EVChargingSim.Grid typename "\"evcharging.Grid\""
+par EVChargingSim.CMS typename "\"evcharging.CentralManagementSystem\""
+par EVChargingSim typename "\"evcharging.EVChargingSim\""
+
